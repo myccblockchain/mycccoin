@@ -11,4 +11,4 @@ The MYCC digital asset is Hongkong (Hong Kong Hong Kong Network Technology Co., 
  
  whitepaper: https://www.mycchk.com/Mycc_Whitepaper.pdf
  
- github: "https://github.com/myccblockchain
+ github: https://github.com/myccblockchain
