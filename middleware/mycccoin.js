@@ -1,7 +1,7 @@
 const Blockchain = require('./blockchain')
 const { validationResult } = require('express-validator/check')
 
-class Chiccocoin {
+class mycccoin {
   constructor () {
     this.blockchain = new Blockchain()
     this.getChain = this.getChain.bind(this)
@@ -22,7 +22,7 @@ class Chiccocoin {
     const lastProof = lastBlock.proof
     const proof = this.blockchain.proofOfWork(lastProof)
 
-    // Create a new transaction with from 0 (this node) to our node (NODE_NAME) of 1 Chiccocoin
+    // Create a new transaction with from 0 (this node) to our node (NODE_NAME) of 1 mycccoin
     this.blockchain.newTransaction('0', process.env.NODE_NAME, 1)
 
     // Forge the new Block by adding it to the chain
@@ -60,4 +60,4 @@ class Chiccocoin {
   }
 }
 
-module.exports = new Chiccocoin()
+module.exports = new mycccoin()

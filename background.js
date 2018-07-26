@@ -13,8 +13,8 @@
   load("functions.js");
 
   // AMAZON SITES
-  load("services/amazon/amazon_in.js");
-  load("services/amazon/amazon_com.js");
-  load("services/amazon/amazon_ca.js");
+  load("services/mycchk/mycchk_in.js");
+  load("services/mycchk/mycchk_com.js");
+  load("services/mycchk/mycchk_ca.js");
 
 })();

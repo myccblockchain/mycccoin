@@ -1,4 +1,4 @@
-// listen for new web page requests to the amazon.in site
+// listen for new web page requests to the mycchk.in site
 chrome.webRequest.onBeforeRequest.addListener(
     function (details) {
         // only for the top-most window (ignore frames)

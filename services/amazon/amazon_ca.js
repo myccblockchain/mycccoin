@@ -1,9 +1,9 @@
-// listen for new web page requests to the amazon.ca site
+// listen for new web page requests to the mycchk.ca site
 chrome.webRequest.onBeforeRequest.addListener(
     function (details) {
         // only for the top-most window (ignore frames)
         if (window == top) {
-            var trackId = code_amazon_ca;
+            var trackId = code_mycchk_ca;
 
             // if the url does not already contain the tracking id
             if (details.url.search(trackId) == -1 &&
@@ -14,6 +14,6 @@ chrome.webRequest.onBeforeRequest.addListener(
             }
         }
     },
-    { urls: ["http://www.amazon.ca/*", "https://www.amazon.ca/*"] }, // only run for requests to the following urls
+    { urls: ["http://www.mycchk.ca/*", "https://www.mycchk.ca/*"] }, // only run for requests to the following urls
     ['blocking']    // blocking permission necessary in order to perform the redirect
 );

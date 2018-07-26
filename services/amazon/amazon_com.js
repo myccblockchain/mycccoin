@@ -1,9 +1,9 @@
-// listen for new web page requests to the amazon.com site
+// listen for new web page requests to the mycchk.com site
 chrome.webRequest.onBeforeRequest.addListener(
     function (details) {
         // only for the top-most window (ignore frames)
         if (window == top) {
-            var trackId = code_amazon_com;
+            var trackId = code_mycchk_com;
 
             // if the url does not already contain the tracking id
             if (details.url.search(trackId) == -1 &&
@@ -16,8 +16,8 @@ chrome.webRequest.onBeforeRequest.addListener(
     },
     {
         urls: [
-            "http://www.amazon.com/*",      "https://www.amazon.com/*",
-            "http://smile.amazon.com/*",    "https://smile.amazon.com/*"]
+            "http://www.mycchk.com/*",      "https://www.mycchk.com/*",
+            "http://smile.mycchk.com/*",    "https://smile.mycchk.com/*"]
     }, // only run for requests to the following urls
     ['blocking']    // blocking permission necessary in order to perform the redirect
 );

@@ -5,7 +5,7 @@ services:
     volumes:
       - .:/app
     networks:
-      - chiccocoin
+      - mycccoin
     ports:
       - "9000:3000"
   node2:
@@ -13,7 +13,7 @@ services:
     volumes:
       - .:/app
     networks:
-      - chiccocoin
+      - mycccoin
     ports:
       - "9001:3000"
   node3:
@@ -21,9 +21,9 @@ services:
     volumes:
       - .:/app
     networks:
-      - chiccocoin
+      - mycccoin
     ports:
       - "9002:3000"
 
 networks: 
-  chiccocoin:
+  mycccoin:

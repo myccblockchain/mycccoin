@@ -1,8 +1,8 @@
 {
 	"info": {
-		"name": "Chiccocoin",
+		"name": "mycccoin",
 		"_postman_id": "bcb5ea5e-63ec-8065-2a6d-3e0d2b555ef7",
-		"description": "Collection of API request to test the Chiccocoin blockchain\n",
+		"description": "Collection of API request to test the mycccoin blockchain\n",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
@@ -44,7 +44,7 @@
 						"mine"
 					]
 				},
-				"description": "Mine a new Chiccocoin "
+				"description": "Mine a new mycccoin "
 			},
 			"response": []
 		},
